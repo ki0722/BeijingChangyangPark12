@@ -36,15 +36,15 @@ header {
 header img {
   position: absolute;
   top: 2rem;
-  left: 0rem;
-  width:90px;
+  left: 50px;
+  width:60px;
 }
 
 header h1 {
   position: absolute;
-  top: 3rem;
-  left: 6rem;
-  font-size: 3vw;/*所有字体大小 根据画面尺寸 自动变换*/
+  top: 35px;
+  left: 120px;
+  font-size: 1.5rem;/*所有字体大小 根据画面尺寸 自动变换*/
   background:-webkit-linear-gradient(0deg, #ACB6E5, #86FDE8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -167,6 +167,29 @@ article.ImageSet {
       h2{font-size:23px;color:white;position:absolute;top:50px;left:30px;}
 
 
+      /* #IMAGESET */
+      article.ImageSetMenu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+        article.ImageSetMenu div.BOX {
+          width: 50px;
+          margin-bottom: 1rem;
+          padding: 0.1rem;
+          background: #DDD;
+        }
+        article.ImageSetMenu div.BOX img {
+          width: 100%;
+        }
+        /* #IMAGESET wenzi de bufeng */
+            div{position:relative;}
+
+            h2{font-size:10px;color:white;position:absolute;top:16px;left:4px;}
+
+
+
 /* XXXXXX for SPRING */
 
 /*
@@ -227,6 +250,13 @@ article.RIPPLES {
     background-image: url(../images/summer/summer_08.jpg);
     background-size:cover;
   }
+  #RIPPLES09 {
+    width:100%;
+    height:480px;
+    background-image: url(../images/summer/summer_09.jpg);
+    background-size:cover;
+  }
+
 
 
 /* LEAVES for AUTUMN */
