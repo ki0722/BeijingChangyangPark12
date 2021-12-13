@@ -37,13 +37,13 @@ header img {
   position: absolute;
   top: 2rem;
   left: 50px;
-  width:60px;
+  width:90px;
 }
 
 header h1 {
   position: absolute;
-  top: 35px;
-  left: 120px;
+  top: 40px;
+  left: 150px;
   font-size: 1.5rem;/*所有字体大小 根据画面尺寸 自动变换*/
   background:-webkit-linear-gradient(0deg, #ACB6E5, #86FDE8);
   -webkit-background-clip: text;
@@ -107,8 +107,9 @@ section {
 /** ARTICLE **/
 
 article {
+
   margin-bottom: 2rem;
-  background:#000022;
+
 }
 
 /* #PHOTO */
@@ -172,10 +173,10 @@ article.ImageSet {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
       }
         article.ImageSetMenu div.BOX {
-          width: 50px;
+          width: 25px;
           margin-bottom: 1rem;
           padding: 0.1rem;
           background: #DDD;
@@ -186,7 +187,7 @@ article.ImageSet {
         /* #IMAGESET wenzi de bufeng */
             div{position:relative;}
 
-            h2{font-size:10px;color:white;position:absolute;top:16px;left:4px;}
+            h2{font-size:5px;color:white;position:absolute;top:10px;left:3px;}
 
 
 
