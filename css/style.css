@@ -156,7 +156,7 @@ article.ImageSet {
   article.ImageSet div.BOX {
     width: 200px;
     margin-bottom: 1rem;
-    padding: 0.1rem;
+    padding: 0.2rem;
     background: #DDD;
   }
   article.ImageSet div.BOX img {
@@ -174,12 +174,14 @@ article.ImageSet {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 1rem;
       }
         article.ImageSetMenu div.BOX {
           width: 25px;
           margin-bottom: 1rem;
           padding: 0.1rem;
           background: #DDD;
+          margin-right: 1rem;
         }
         article.ImageSetMenu div.BOX img {
           width: 100%;
