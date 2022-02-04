@@ -64,44 +64,64 @@ header h3{
 nav {
   padding: 1rem 3rem ;
   background:linear-gradient(to top,#000055,#000033);
-}
-
-#con{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-#con li{
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0;
+}
+
+nav ul li{
   margin-right: 2vw;
 }
 
-#con li:hover{
-  background-color: white;
-}
-
-#con li a {
+nav ul li a {
   color: white;
 }
 
-#con li a:hover {
+#socialIcon li a {
+  color: silver;
+}
+
+nav ul li a:hover {
   color: red;
 }
+
+
+
 
 /**************** MAIN ***********/
 
 main {
   display: flex;
+  flex-direction: row;
   flex-wrap：wrap;
   justify-content:space-between;
+}
+
+@media screen and (max-width: 799px) {
+  main {
+    flex-direction: column;
+  }
 }
 
 
 /*** SECTION ****/
 
 section {
-  flex:3;
+  width: calc(100% - 360px);
   padding: 3rem;
   background:  	#000011;
+}
+
+@media screen and (max-width: 799px) {
+   section {
+     width: calc(100% - 6rem);
+   }
 }
 
 /** ARTICLE **/
@@ -163,40 +183,15 @@ article.ImageSet {
     width: 100%;
   }
   /* #IMAGESET wenzi de bufeng */
-      div{position:relative;}
+  /* div{position:relative;}
+  h2{font-size:23px;color:white;position:absolute;top:50px;left:30px;} */
 
-      h2{font-size:23px;color:white;position:absolute;top:50px;left:30px;}
-
-
-      /* #IMAGESET */
-      article.ImageSetMenu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 1rem;
-      }
-        article.ImageSetMenu div.BOX {
-          width: 38px;
-          margin-bottom: 1rem;
-          padding: 0.1rem;
-          background: #DDD;
-          margin-right: 1rem;
-        }
-        article.ImageSetMenu div.BOX img {
-          width: 100%;
-        }
-        /* #IMAGESET wenzi de bufeng */
-            div{position:relative;}
-
-            h2{font-size:8px;color:white;position:absolute;top:18px;left:4px;}
 
 
 /* XXXXXX for SPRING */
 
 /*
 article.XXXXXX {
-
 
 */
 
@@ -778,26 +773,20 @@ article.SNOW {
 /*** ASIDE ****/
 
 aside {
-  flex:1;
+  width: calc(360px - 6rem);
   padding: 3rem;
   text-align: center;
   background:linear-gradient(to top,#000055, #000011);
 }
 
-  aside h1 {
-    background:-webkit-linear-gradient(0deg, #86FDE8,#ACB6E5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #FFFFDD;
+  @media screen and (max-width: 799px) {
+    aside {
+      width: calc(100% - 6rem);
+    }
   }
 
-  aside p {
-    background:-webkit-linear-gradient(0deg, #86FDE8,#ACB6E5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #FFFFDD;
+  aside iframe {
+    overflow-x: hidden;
   }
 
 /************* FOOTER **************/
@@ -813,4 +802,31 @@ footer p {
   background:-webkit-linear-gradient(0deg, #98fb98, #86FDE8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* #IMAGESET */
+#ImageSetMenu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#ImageSetMenu li.BOX {
+  position:relative;
+  width: 38px;
+  margin-bottom: 1rem;
+  padding: 0.1rem;
+  background: #DDD;
+  margin-right: 1rem;
+}
+#ImageSetMenu li.BOX img {
+  width: 100%;
+}
+
+#ImageSetMenu li.BOX h2 {
+  font-size:8px;
+  color:white;
+  position:absolute;
+  top:18px;left:4px;
 }
